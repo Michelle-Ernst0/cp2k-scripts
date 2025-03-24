@@ -220,7 +220,7 @@ def plot_bands(bs_data, dos_data=None, figsize=(10, 6), dpi=150, ewin=None, sigm
     }
 
     # needed when plotting both spins
-    bs_colors = ["blue", "red"]
+    bs_colors = ["black", "black"] #this was bs_colors = ["blue", "red"] 
     E_vbm = []
     E_cbm = []
     k_vbm = []
@@ -323,9 +323,9 @@ def plot_bands(bs_data, dos_data=None, figsize=(10, 6), dpi=150, ewin=None, sigm
                 E_cbm_min = E_cbm[1]
                 cbm_k_dist_min = k_distances[k_cbm[1]]
 
-            ax_band_tot.scatter(vbm_k_dist_max, E_vbm_max, color="green", s=20, zorder=5)
-            ax_band_tot.scatter(cbm_k_dist_min, E_cbm_min, color="green", s=20, zorder=5)
-            ax_band_tot.set_title("Band Structure (Spin 1 and 2)")
+            #ax_band_tot.scatter(vbm_k_dist_max, E_vbm_max, color="green", s=20, zorder=5)
+            #ax_band_tot.scatter(cbm_k_dist_min, E_cbm_min, color="green", s=20, zorder=5)
+            #ax_band_tot.set_title("Band Structure (Spin 1 and 2)")
 
         # set limits if requested
         if ewin:
